@@ -7,7 +7,7 @@ module.exports = class LinkedList {
 	}
 	append(element) {
 		let node = new LinkedNode(element)
-		if (this.head === null) {
+		if (this.size === 0) {
 			this.head = node
 		} else {
 			let currNode = this._getNode(this.size - 1)
